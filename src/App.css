@@ -25,17 +25,26 @@ body {
 }
 
 .environment-container {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 100%;
+  background: linear-gradient(to bottom, 
+    #001b61 0%,
+    #001b61 15%,
+    #001b61 25%,
+    #001b61 32%,
+    #001b61 40%,
+    #000000 47%
+    
+  );
 }
 
 .environment-container canvas {
   width: 100% !important;
   height: 100% !important;
   outline: none;
+  position: relative;
+  z-index: 2;
 }
 
 .canvas-container {
@@ -72,7 +81,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: linear-gradient(to bottom, #00248a, #001a61);
   padding: 2rem 4rem;
   height: 100vh;
   overflow: hidden;
@@ -119,14 +127,7 @@ section {
   position: relative;
   width: 100%;
   height: 70vh;
-  background: linear-gradient(to bottom, #001a61, #000f3d);
   padding: 0;
-}
-
-.environment-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
 }
 
 h1 {
